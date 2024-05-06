@@ -9,5 +9,3 @@ d.addEventListener("DOMContentLoaded", (e) => {
   digitalClock("#reloj", "#activar-reloj", "#desactivar-reloj")
 
 });
-
-//testing pc 2
