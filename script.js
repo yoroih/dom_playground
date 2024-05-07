@@ -3,6 +3,7 @@ import { digitalClock, alarm } from "./code/2alarm.js";
 import { moveBall } from "./code/3teclado.js";
 import countdown from "./code/4countdown.js";
 import scrollTopButton from "./code/5scrollbutton.js";
+import darkTheme from "./code/6darkmodebutton.js";
 
 
 
@@ -19,6 +20,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   countdown("countdown", "Oct 13, 2024 00:05:00", "Happy Birthday");
 
   scrollTopButton(".scroll-top-btn");
+  
+  darkTheme(".dark-theme-btn", "dark-mode");
 });
 
 d.addEventListener("keydown", (e) => {
