@@ -1,20 +1,41 @@
-const d=document;
+const d = document;
 
-export function shortcuts (e) {
+let x=0, y=0;
 
-  if(e.key === "a" && e.altKey){
-    alert("Lanzaste una alerta con el teclado")
+export function moveBall(e, ball, stage){
+  const $ball = d.querySelector(ball),
+    $stage = d.querySelector(stage),
+    limitsBall = $ball.getBoundingClientRect(),
+    limitsStage = $stage.getBoundingClientRect();
+
+  console.log(e.keyCode);
+  console.log(e.key)
+  console.log(limitsBall, limitsStage);
+
+  switch (e.keyCode) {
+    case 37:
+      e.preventDefault();
+      if(limitsBall.left > limitsStage.left) x--;
+      break;
+
+    case 38:
+      e.preventDefault();
+      if(limitsBall.top > limitsStage.top) y--;
+      break;
+
+    case 39:
+      e.preventDefault();
+      if(limitsBall.right < limitsStage.right) x++;
+      break;
+
+    case 40:
+      e.preventDefault();
+      if(limitsBall.bottom < limitsStage.bottom) y++;
+      break;
+
+    default:
+      break;
   }
-
-  if(e.key === "c" && e.altKey){
-    alert("Lanzaste una confirmación con el teclado")
-  }
-
-  if(e.key === "p" && e.altKey){
-    alert("Lanzaste un aviso con el teclado")
-  }
-
-
-
+  $ball.style.transform = `translate(${x*10}px, ${y*10}px)`
 };
 
