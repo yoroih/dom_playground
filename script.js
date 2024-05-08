@@ -6,6 +6,7 @@ import scrollTopButton from "./code/5scrollbutton.js";
 import darkTheme from "./code/6darkmodebutton.js";
 import responsiveMedia from "./code/7object_responsive.js";
 import responsiveTester from "./code/8prueba_responsive.js";
+import userDeviceInfo from "./code/9.deteccion_dispositivos.js";
 
 const d = document;
 
@@ -21,6 +22,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   responsiveMedia("gmaps", "(min-width: 1024px)", `<a href="https://maps.app.goo.gl/yiBKBzV4BviQPrp36" target="_blank" rel="noopener">Ver Mapa</a>`, `<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d97183.3193747869!2d-80.06290196755806!3d40.43146987091651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA%2C%20USA!5e0!3m2!1sen!2spe!4v1715123752758!5m2!1sen!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>`);
 
   responsiveTester("responsive-tester");
+  userDeviceInfo("user-device");
 
 });
 
