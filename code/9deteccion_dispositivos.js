@@ -53,10 +53,6 @@ export default function userDeviceInfo(id){
     $id.innerHTML += `<p>Este contenido solo se ve en <b>${isBrowser.any()}</b></p>`;
   }
 
-  if(isBrowser.edge()){
-    $id.innerHTML += `<p>Este contenido solo se ve en <b>${isBrowser.any()}</b></p>`;
-  }
-
   if(isDesktop.linux()){
     $id.innerHTML += `<p> Download out content for <b>${isDesktop.any()}</b></p>`;
   }
