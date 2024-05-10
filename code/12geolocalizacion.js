@@ -31,5 +31,5 @@ export default function getGeolocation(id){
 
   n.geolocation.getCurrentPosition(succes, error, options);
 
-  
+  //WatchPosition()
 };
