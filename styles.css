@@ -233,3 +233,11 @@ img{
 .card figcaption {
   padding: 1rem;
 }
+
+.filter{
+  /* display: none; */
+  visibility: hidden;
+  opacity: 0;
+  order: 1;
+}
+

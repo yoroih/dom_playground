@@ -10,6 +10,7 @@ import userDeviceInfo from "./code/9deteccion_dispositivos.js";
 import networkStatus, { showConnection } from "./code/10deteccion_red.js";
 import webCam from "./code/11deteccion_webcam.js";
 import getGeolocation from "./code/12geolocalizacion.js";
+import searchFilters from "./code/13filtro_busquedas.js";
 
 const d = document;
 
@@ -29,6 +30,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   showConnection("connection");
   webCam("webcam");
   getGeolocation("geolocation");
+  searchFilters(".card-filter", ".card");
 });
 
 d.addEventListener("keydown", (e) => {
