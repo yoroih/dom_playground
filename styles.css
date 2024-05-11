@@ -247,14 +247,16 @@ img{
 .slider {
   position: relative;
   border: thin solid black;
-  width: 80%;
+  width: 70%;
+  height: 35rem;
   margin: 1rem auto;
   text-align: center;
 }
 
 .slider-slides {
   position: relative;
-  height: 400px;
+  /*height: 400px;*/
+  height: 100%;
 }
 
 .slider-slide {
