@@ -1,6 +1,7 @@
 const d = document;
 
 export default function draw (btn, selector){
+  //función para selección random por medio de html  
   const getWinner = (selector) => {
     const $players = d.querySelectorAll(selector);
     const random = Math.floor(Math.random()*$players.length);
