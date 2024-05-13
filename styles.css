@@ -337,6 +337,7 @@ img{
     transform: translate(0, 0);
     opacity: 1;
     visibility: visible;
+    z-index: 996;
   }
 
   .panel-btn {
@@ -350,7 +351,7 @@ img{
 
   .menu a {
     font-size: 1rem;
-    padding: 0.80rem;
+    padding: calc(100%/13);
   }
 
   .menu a:hover,
