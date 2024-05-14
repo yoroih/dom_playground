@@ -285,6 +285,7 @@ img{
 
 .slider-btns {
   position: absolute;
+  /* width: 100%; */
   left: 1rem;
   right: 1rem;
   top: 50%;
