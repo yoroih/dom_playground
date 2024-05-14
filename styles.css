@@ -246,7 +246,7 @@ img{
 
 .slider {
   position: relative;
-  border: thin solid black;
+  /* border: thin solid black; */
   width: 70%;
   height: 35rem;
   margin: 1rem auto;
@@ -275,6 +275,7 @@ img{
   width: inherit;
   object-fit: cover;
   object-position: 50% 0%;
+  border-radius: 40px;
 }
 
 .slider-slide.active{
@@ -284,29 +285,43 @@ img{
 
 .slider-btns {
   position: absolute;
-  width: 100%;
+  left: 1rem;
+  right: 1rem;
   top: 50%;
   display: flex;
   justify-content: space-between;
-  font-size: 3rem;
+  font-size: 2.3rem;
   font-weight: bold;
+
 }
 
 .slider a {
   display: block;
-  width: 4rem;
-  height: 4rem;
+  min-width: 3rem;
+  min-height: 3rem;
   border-radius: 50%;
-  border: thin solid #000;
+  /* border: thin solid #000; */
   text-decoration: none;
   background-color: #fff;
   color: #000;
   transition: all 0.3s ease;
+  opacity: 0.4;
 }
 
 .slider a:hover {
-  color: #4d4d4d;
+  color: #a8a8a8;
 }
+
+#seccion13 :nth-child(2) {
+  margin-bottom: 200px;
+}
+
+#seccion13 video {
+  width: 70%;
+  border-radius: 20px;
+
+}
+
 
 /*SCROLL SPY*/
 @media screen and (min-width: 1024px){
