@@ -1,9 +1,9 @@
 const d = document;
 
-export default function contactFormValidations() {
-  const $form = d.querySelector(".contact-form");
-  const $inputs = d.querySelectorAll(".contact-form [required]");
+const $form = d.querySelector(".contact-form");
+const $inputs = d.querySelectorAll(".contact-form [required]");
 
+export default function contactFormValidations() {
   $inputs.forEach(input => {
     const $span = d.createElement("span");
     $span.id = input.name;
@@ -32,3 +32,21 @@ export default function contactFormValidations() {
     }
   });
 };
+
+d.addEventListener("submit", e => {
+  e.preventDefault();
+
+  const $loader = d.querySelector(".contact-form-loader");
+  const $response = d.querySelector(".contact-form-response");
+
+  $loader.classList.remove("none");
+
+  setTimeout(() => {
+    $loader.classList.add("none");
+    $response.classList.remove("none");
+    $form.reset();
+
+    setTimeout(() => $response.classList.add("none"), 2000);
+
+  }, 2000);
+});
