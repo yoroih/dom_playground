@@ -385,7 +385,7 @@ img{
 
 .contact-form {
   --form-ok-color: #4caf50;
-  --forn-error-color: #f44336;
+  --form-error-color: #f44336;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
@@ -433,7 +433,7 @@ img{
 }
 
 .contact-form [required]:invalid {
-  border: thin solid var(--forn-error-color);
+  border: thin solid var(--form-error-color);
 }
 
 .contact-form [required]:placeholder-shown {
@@ -444,7 +444,7 @@ img{
   width: 50%;
   margin-top: -1rem;
   font-size: 80%;
-  background-color: var(--forn-error-color);
+  background-color: var(--form-error-color);
   color: #fff;
   transition: all 800ms ease;
 }
@@ -468,4 +468,39 @@ img{
     visibility: visible;
     opacity: 1;
   }
+}
+
+/*Narrador*/
+
+.speech-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.speech-container > * {
+  padding: .5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 70%;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.speech-container select {
+  width: 50%;
+  border: none;
+}
+
+.speech-container textarea {
+  resize: none;
+  border: none;
+}
+
+.speech-container button {
+  border-radius: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 8rem;
 }
